@@ -1,0 +1,148 @@
+.me {
+    margin: 100px 0 0 0;
+}
+.me__content { 
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.me__content-photo {
+    border-radius: 2rem;
+    width: 315px;
+    height: 557px;
+}
+.desktop-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.desktop-text__content {
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2;
+    color: #788E9C;
+    font-family: "Work Sans";
+}
+.read-more {
+    display: none;
+}
+.certificate-title {
+    color: #000000;
+    font-family: "Work Sans";
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.btn-close {
+    --bs-btn-close-focus-shadow: none;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.info__btn {
+    border-radius: 20px;
+    background-color: #A259FF;
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    width: 122px;
+    height: 36px;
+    margin: 16px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: transform .3s linear;
+    & svg {
+        transition: transform .3s linear; 
+    }
+    &:hover {
+        transform: scale(.98);
+        & svg {
+            transform: rotate(-360deg) scale(1.05);
+        }
+    }
+}
+.certificate {
+    width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+    .me {
+        margin: 77px 0 0 0;
+    }
+    .me__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .desktop-text__content {
+        width: 100%;
+    }
+    .me__content-photo {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .info {
+        align-items: center;
+    }
+    .desktop-text {
+        display: none;
+    }
+    .read-more {
+        display: block;
+    }
+    .desktop-text__content {
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2;
+        color: #788E9C;
+        font-family: "Work Sans";
+
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; 
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    #toggle {
+        display: none; 
+    }
+    #toggle:checked ~ .mobile-text p {
+        -webkit-line-clamp: unset; 
+      }
+    
+      #toggle:checked ~ label::after {
+        content: " Show less"; 
+      }
+      label {
+        color: #a259ff;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 5px;
+      }
+    
+      label::after {
+        content: " Read more"; /* Початковий текст кнопки */
+      }
+      .me__content {
+        gap: 1rem;
+      }
+}
+
+@media (max-width: 356px) {
+    .certificate-title {
+        font-size: 17px !important;
+    }
+}

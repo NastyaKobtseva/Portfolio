@@ -1,0 +1,42 @@
+body {
+    padding: 0;
+    padding: 0;
+    background: #2B2B2B;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    width: 1074px;
+    margin: 0 auto;
+}
+
+@import "./components/header";
+@import "./components/me";
+@import "./components/skills";
+@import "./components/footer";
+
+@media (max-width: 1024px) {
+    .container {
+        width: 714px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 340px;
+    }
+}
+
+@media (max-width: 356px) {
+    .container {
+        width: 320px;
+    }
+}
