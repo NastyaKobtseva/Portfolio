@@ -41,6 +41,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
 }
 .welcome__content-title {
     color: #FFF;
@@ -50,6 +54,11 @@
     font-weight: 500;
     line-height: normal;
     padding: 10px 0 25px 0;
+
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
 }
 .welcome__content-title-span {
     color: #A259FF;
@@ -66,6 +75,21 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }
 .scroll-content {
     position: relative;
