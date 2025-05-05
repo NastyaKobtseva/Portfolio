@@ -52,6 +52,11 @@
         transform: rotate(0deg);
     }
 }
+.phone__info {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
 .phone__link {
     color: #788E9C;
     font-family: "Work Sans";
@@ -65,7 +70,14 @@
         transform: scale(1.05);
     }
 }
-
+.virgule {
+    color: #788E9C;
+    font-family: "Work Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 .social__subtitle {
     color: white;
     font-family: "Work Sans";
