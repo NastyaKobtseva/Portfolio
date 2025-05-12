@@ -21,7 +21,7 @@
 }
 .phone {
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 8px;
 }
 .phone__subtitle {
@@ -56,6 +56,7 @@
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
+    align-items: end;
 }
 .phone__link {
     color: #788E9C;

@@ -500,7 +500,7 @@ a {
 
 .phone {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 8px;
 }
 
@@ -537,6 +537,7 @@ a {
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
+  align-items: end;
 }
 
 .phone__link {
