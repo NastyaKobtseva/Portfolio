@@ -47,19 +47,17 @@
     gap: 3px;
 }
 .developer__text {
-    // color: #FFF;
     color: #a259ff;
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 110%; /* 73.7px */
     text-transform: capitalize;
 }
 .developer__quote {
     color: #FFF;
-    // color: #a259ff;
-    font-family: "Space Mono";
+    font-family: "Fira Mono";
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -67,10 +65,39 @@
 }
   .navigation {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
   }
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.lang-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%;
+  transition: transform .3s linear, color .3s linear;
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+.lang-btn.active {
+  color: #a259ff;
+}
+.language-switcher__line {
+  width: 2px;
+  height: 15px;
+  background-color: white;
+}
   .menu {
     gap: 50px;
     display: flex;
@@ -84,10 +111,10 @@
     &__link {
         color: #fff;
         text-align: center;
-        font-family: "Work Sans";
+        font-family: "Manrope";
         font-size: 16px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 800;
         line-height: 140%;
         transition: color 0.3s linear;
         &:hover {

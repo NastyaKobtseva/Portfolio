@@ -13,10 +13,10 @@
 }
 .project-nav__content-title {
     color: #FFF;
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 56px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     text-align: center;
     padding: 0 0 63px 0;
@@ -36,13 +36,11 @@
     color: #FFF;
     text-align: center;
     
-    /* H5 - Work Sans */
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 140%; /* 30.8px */
-    text-transform: capitalize;
 }
 .nav-item__link {
     display: flex;
@@ -51,13 +49,11 @@
     color: #858584;
     text-align: center;
     
-    /* H5 - Work Sans */
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 140%; /* 30.8px */
-    text-transform: capitalize;
     transition: color .3s linear;
     &:hover {
         color: white;
@@ -88,8 +84,7 @@
 .nav-item__link-text{
     color: #FFF;
 
-    /* Base (Body) - Space Mono */
-    font-family: "Space Mono";
+    font-family: "Fira Mono";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -145,44 +140,37 @@
 }
 .magic__content-title {
     color: #FFF;
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 35px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
     padding: 14px 0;
 }
 .magic__content-subtitle {
     color: #788E9C;
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
 }
 .magic__content-technologies {
     color: #788E9C;
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 15px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     padding: 26px 0 6px 0;
 }
-.magic__content-technologies-line {
-    color: #788E9C;
-    font-family: "Work Sans";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+
 .magic__content-work {
     color: #788E9C;
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 15px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
 }
 .magic__content-btn {
@@ -193,10 +181,10 @@
 }
 .btn__demo {
     color: #FFF;
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     border-radius: 10px;
     background-color: #A259FF;
@@ -216,10 +204,10 @@
 }
 .btn__repository {
     color: #FFF;
-    font-family: "Work Sans";
+    font-family: "Manrope";
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     border-radius: 10px;
     width: 154px;
@@ -292,29 +280,6 @@
     }
 }
 @media (max-width: 768px) {
-    .magic__btn {
-        border-radius: 20px;
-        border: 2px solid #a259ff;
-        display: flex
-;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        text-align: center;
-        font-family: "Work Sans";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%;
-        gap: 12px;
-        background-color: transparent;
-        height: 60px;
-        width: 315px;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        transition: transform 0.3s linear, bg-color 0.3s linear;
-    }
     .project-nav__content-title {
         font-size: 33px;
         padding: 0 0 29px 0;

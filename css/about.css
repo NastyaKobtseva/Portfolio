@@ -81,17 +81,17 @@ a {
 
 .developer__text {
   color: #a259ff;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 22px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 110%; /* 73.7px */
   text-transform: capitalize;
 }
 
 .developer__quote {
   color: #FFF;
-  font-family: "Space Mono";
+  font-family: "Fira Mono";
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -100,9 +100,42 @@ a {
 
 .navigation {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lang-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%;
+  transition: transform 0.3s linear, color 0.3s linear;
+}
+.lang-btn:hover {
+  transform: scale(0.95);
+}
+
+.lang-btn.active {
+  color: #a259ff;
+}
+
+.language-switcher__line {
+  width: 2px;
+  height: 15px;
+  background-color: white;
 }
 
 .menu {
@@ -119,10 +152,10 @@ a {
 .menu__link {
   color: #fff;
   text-align: center;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 140%;
   transition: color 0.3s linear;
 }
@@ -239,10 +272,10 @@ a {
 .desktop-text__content {
   font-size: 0.9rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2;
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
 }
 
 .read-more {
@@ -251,10 +284,10 @@ a {
 
 .certificate-title {
   color: #000000;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 20px !important;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -270,12 +303,6 @@ a {
 .info__btn {
   border-radius: 20px;
   background-color: #A259FF;
-  color: #FFF;
-  font-family: "Work Sans";
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   border: none;
   width: 122px;
   height: 36px;
@@ -285,6 +312,14 @@ a {
   justify-content: center;
   gap: 6px;
   transition: transform 0.3s linear;
+}
+.info__btn p {
+  color: #FFF;
+  font-family: "Manrope";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .info__btn svg {
   transition: transform 0.3s linear;
@@ -329,10 +364,10 @@ a {
   .desktop-text__content {
     font-size: 0.8rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 2;
     color: #788E9C;
-    font-family: "Work Sans";
+    font-family: "Manrope";
     width: 100%;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -348,6 +383,8 @@ a {
   }
   #toggle:checked ~ label::after {
     content: " Show less";
+    font-family: "Manrope";
+    font-weight: 600;
   }
   label {
     color: #a259ff;
@@ -381,10 +418,10 @@ a {
 
 .skills__content-title {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 56px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -417,10 +454,10 @@ a {
 
 .use__card-subtitle {
   color: white;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 3rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   display: flex;
   align-items: center;
@@ -506,10 +543,10 @@ a {
 
 .phone__subtitle {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   display: flex;
   align-items: center;
@@ -542,10 +579,10 @@ a {
 
 .phone__link {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 17px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   transition: color 0.3s linear, transform 0.3s linear;
 }
@@ -556,19 +593,19 @@ a {
 
 .virgule {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 17px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
 .social__subtitle {
   color: white;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 35px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -618,19 +655,19 @@ a {
 
 .developed__designed-text {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
 .developed__designed-kobtseva {
   color: #A259FF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 

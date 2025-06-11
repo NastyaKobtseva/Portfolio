@@ -80,17 +80,17 @@ a {
 
 .developer__text {
   color: #a259ff;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 22px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 110%; /* 73.7px */
   text-transform: capitalize;
 }
 
 .developer__quote {
   color: #FFF;
-  font-family: "Space Mono";
+  font-family: "Fira Mono";
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -99,9 +99,42 @@ a {
 
 .navigation {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lang-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%;
+  transition: transform 0.3s linear, color 0.3s linear;
+}
+.lang-btn:hover {
+  transform: scale(0.95);
+}
+
+.lang-btn.active {
+  color: #a259ff;
+}
+
+.language-switcher__line {
+  width: 2px;
+  height: 15px;
+  background-color: white;
 }
 
 .menu {
@@ -118,10 +151,10 @@ a {
 .menu__link {
   color: #fff;
   text-align: center;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 140%;
   transition: color 0.3s linear;
 }
@@ -254,38 +287,38 @@ a {
 
 .welcome__content-hello {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 56px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
 }
 
 .welcome__content-title {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 66px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   padding: 10px 0 25px 0;
 }
 
 .welcome__content-title-span {
   color: #A259FF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 66px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
 .welcome__content-web {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 60px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -296,7 +329,7 @@ a {
 .scroll-down {
   left: 50%;
   transform: translate(-50%, 0);
-  top: 140px;
+  top: 100px;
   cursor: pointer;
   height: 50px;
   position: absolute;
@@ -382,19 +415,19 @@ a {
 
 .about__content-title {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 56px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
 .about__content-title-span {
   color: #A259FF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 56px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -418,7 +451,7 @@ a {
 
 .information__content-title {
   color: #A259FF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
@@ -428,20 +461,20 @@ a {
 
 .information__content-name {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 2.7rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   margin: 0 0 2rem 0;
 }
 
 .information__content-text {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 1.3rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   margin: 0 0 3rem 0;
 }
@@ -461,10 +494,10 @@ a {
 
 .information__additional {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 1rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -480,21 +513,27 @@ a {
   margin: 0 0 3rem 0;
 }
 
+.hobbies__content {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+
 .hobbies__text {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
-.hobbies__text-span {
+.hobbies__subtitle {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 17px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -505,12 +544,6 @@ a {
   border: none;
   outline: none;
   background-color: #A259FF;
-  color: #FFF;
-  font-family: "Work Sans";
-  font-size: 1.1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -523,6 +556,14 @@ a {
 }
 .information__btn:hover .icon {
   width: 93%;
+}
+.information__btn p {
+  color: #FFF;
+  font-family: "Manrope";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .icon {
@@ -583,10 +624,10 @@ a {
   width: 100px;
   height: 30px;
   color: black;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 15px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   background-color: white;
   border-radius: 20px;
@@ -631,7 +672,7 @@ a {
   .information__content-additional, .hobbies {
     margin: 0 0 2rem 0;
   }
-  .hobbies__text-span {
+  .hobbies__subtitle {
     font-size: 16px;
   }
   .hobbies__text {
@@ -640,8 +681,10 @@ a {
   .information__btn {
     width: 156px;
     height: 42px;
-    font-size: 1rem;
     padding: 0.35em 3em 0.35em 1.4rem;
+  }
+  .information__btn p {
+    font-size: 1rem;
   }
   .icon {
     width: 30px;
@@ -696,6 +739,9 @@ a {
   .about__content {
     gap: 29px;
   }
+  .hobbies__content {
+    align-items: center;
+  }
   .information__content-title {
     margin: 0 0 1rem 0;
     font-size: 1.5rem;
@@ -745,10 +791,10 @@ a {
 
 .project-nav__content-title {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 56px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   text-align: center;
   padding: 0 0 63px 0;
@@ -769,13 +815,11 @@ a {
 .nav-item__link.active {
   color: #FFF;
   text-align: center;
-  /* H5 - Work Sans */
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 22px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 140%; /* 30.8px */
-  text-transform: capitalize;
 }
 
 .nav-item__link {
@@ -784,13 +828,11 @@ a {
   align-items: center;
   color: #858584;
   text-align: center;
-  /* H5 - Work Sans */
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 22px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 140%; /* 30.8px */
-  text-transform: capitalize;
   transition: color 0.3s linear;
 }
 .nav-item__link:hover {
@@ -823,8 +865,7 @@ a {
 
 .nav-item__link-text {
   color: #FFF;
-  /* Base (Body) - Space Mono */
-  font-family: "Space Mono";
+  font-family: "Fira Mono";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -887,48 +928,39 @@ a {
 
 .magic__content-title {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 35px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
   padding: 14px 0;
 }
 
 .magic__content-subtitle {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
 .magic__content-technologies {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 15px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   padding: 26px 0 6px 0;
 }
 
-.magic__content-technologies-line {
-  color: #788E9C;
-  font-family: "Work Sans";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
 .magic__content-work {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 15px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -941,10 +973,10 @@ a {
 
 .btn__demo {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   border-radius: 10px;
   background-color: #A259FF;
@@ -965,10 +997,10 @@ a {
 
 .btn__repository {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   border-radius: 10px;
   width: 154px;
@@ -1041,28 +1073,6 @@ a {
   }
 }
 @media (max-width: 768px) {
-  .magic__btn {
-    border-radius: 20px;
-    border: 2px solid #a259ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    font-family: "Work Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-    gap: 12px;
-    background-color: transparent;
-    height: 60px;
-    width: 315px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: transform 0.3s linear, bg-color 0.3s linear;
-  }
   .project-nav__content-title {
     font-size: 33px;
     padding: 0 0 29px 0;
@@ -1118,10 +1128,10 @@ a {
 
 .phone__subtitle {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   display: flex;
   align-items: center;
@@ -1154,10 +1164,10 @@ a {
 
 .phone__link {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 17px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   transition: color 0.3s linear, transform 0.3s linear;
 }
@@ -1168,19 +1178,19 @@ a {
 
 .virgule {
   color: #788E9C;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 17px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
 .social__subtitle {
   color: white;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 35px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -1230,19 +1240,19 @@ a {
 
 .developed__designed-text {
   color: #FFF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
 .developed__designed-kobtseva {
   color: #A259FF;
-  font-family: "Work Sans";
+  font-family: "Manrope";
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 

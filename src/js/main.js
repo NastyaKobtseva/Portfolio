@@ -24,3 +24,39 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+
+
+// lang 
+let currentLanguage = 'en';
+
+function switchLanguage(lang) {
+  currentLanguage = lang;
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('active');
+    }
+  });
+
+  document.querySelectorAll('[data-en][data-uk]').forEach(element => {
+    const html = element.getAttribute('data-' + lang);
+    if (html) {
+      element.innerHTML = html; 
+    }
+  });
+
+  document.documentElement.setAttribute('lang', lang);
+  console.log('Language switched to:', lang);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.lang-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      const lang = this.getAttribute('data-lang');
+      switchLanguage(lang);
+    });
+  });
+
+  switchLanguage(currentLanguage);
+});
