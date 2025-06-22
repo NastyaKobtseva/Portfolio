@@ -1,7 +1,7 @@
 
 body {
     padding: 0;
-    padding: 0;
+    margin: 0;
     background: #2B2B2B;
 }
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -16,8 +16,10 @@ a {
     color: inherit;
 }
 .container {
-    width: 1074px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 @import "./components/header";
@@ -29,17 +31,48 @@ a {
 
 @media (max-width: 1024px) {
     .container {
-        width: 714px;
+        padding: 0 24px;
     }
 }
 @media (max-width: 768px) {
     .container {
-        width: 340px;
+        padding: 0 12px;
     }
 }
 
 @media (max-width: 356px) {
     .container {
-        width: 320px;
+        padding: 0 12px;
     }
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#preloader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#preloader img {
+  width: 150px;
+  height: auto;
+}
+
+@media (max-width: 400px) {
+  #preloader img {
+    width: 100px;
+  }
 }
