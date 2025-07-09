@@ -111,12 +111,17 @@
 }
 
 .magic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-wrap: wrap;
+    // gap: 30px;
+    // padding: 60px 0 60px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 480px);
     gap: 30px;
-    padding: 60px 0 60px 0;
+    padding: 60px 0;
+    justify-content: center;
 }
 .magic__content {
     background: #2B2B2B;
@@ -241,6 +246,8 @@
         width: 153px;
     }
     .magic {
+        grid-template-columns: repeat(2, 331px);
+        justify-content: center;
         padding: 30px 0;
     }
     .magic__content {
@@ -255,7 +262,7 @@
         padding: 12px 0 10px 0;
     }
     .magic__content-subtitle {
-        font-size: 15px;
+        font-size: 14px;
     }
     .magic__content-technologies {
         font-size: 11px;
@@ -286,6 +293,10 @@
     }
     .nav__content {
         gap: 23px;
+    }
+    .magic {
+        grid-template-columns: 320px;
+        justify-content: center;
     }
     .magic__content {
         width: 320px;

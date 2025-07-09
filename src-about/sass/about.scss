@@ -15,10 +15,12 @@ a {
     color: inherit;
 }
 .container {
-    max-width: 1200px;
-    width: 100%;
+    // max-width: 1200px;
+    // width: 100%;
+    width: 1074px;
     margin: 0 auto;
-    padding: 0 16px;
+    // padding: 0 16px;
+    padding: 0 10px;
 }
 
 @import "./components/header";
@@ -28,17 +30,20 @@ a {
 
 @media (max-width: 1024px) {
     .container {
+        width: 714px;
         padding: 0 24px;
     }
 }
 @media (max-width: 768px) {
     .container {
+        width: 340px;
         padding: 0 12px;
     }
 }
 
 @media (max-width: 356px) {
     .container {
+        width: 320px;
         padding: 0 12px;
     }
 }
