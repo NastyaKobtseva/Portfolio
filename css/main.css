@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   padding: 0;
   margin: 0;
@@ -259,18 +260,31 @@ a {
   align-items: center;
   justify-content: center;
   margin: 100px 0 0 0;
+  z-index: 1;
 }
-
-.welcome__video {
+.welcome::before {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  filter: hue-rotate(67deg) brightness(0.4);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../src/image/raster/welcome/bg-image.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: hue-rotate(124deg) brightness(0.7);
+  z-index: -2;
+}
+.welcome::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* затемнюючий шар */
+  z-index: -1;
 }
 
 .welcome__content {
@@ -1316,5 +1330,29 @@ a {
   .container {
     width: 320px;
     padding: 0 12px;
+  }
+}
+.section-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.first-visible {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=main.css.map */
