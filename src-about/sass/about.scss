@@ -36,14 +36,8 @@ a {
 }
 @media (max-width: 768px) {
     .container {
-        width: 340px;
-        padding: 0 12px;
-    }
-}
-
-@media (max-width: 356px) {
-    .container {
-        width: 320px;
+        // width: 340px;
+        width: 100%;
         padding: 0 12px;
     }
 }

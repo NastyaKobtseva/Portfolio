@@ -669,7 +669,7 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .developed__designed-text {
+  .developed__designed-text, .developed__designed-kobtseva {
     font-size: 12px;
   }
   .social__subtitle {
@@ -703,7 +703,7 @@ a {
   .social__subtitle {
     font-size: 28px;
   }
-  .developed__designed-text {
+  .developed__designed-text, .developed__designed-kobtseva {
     font-size: 11px;
   }
 }
@@ -715,13 +715,7 @@ a {
 }
 @media (max-width: 768px) {
   .container {
-    width: 340px;
-    padding: 0 12px;
-  }
-}
-@media (max-width: 356px) {
-  .container {
-    width: 320px;
+    width: 100%;
     padding: 0 12px;
   }
 }

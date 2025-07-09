@@ -1107,9 +1107,6 @@ a {
     font-size: 33px;
     padding: 0 0 29px 0;
   }
-  .nav__content {
-    gap: 23px;
-  }
   .magic {
     grid-template-columns: 320px;
     justify-content: center;
@@ -1121,7 +1118,10 @@ a {
     font-size: 13px;
   }
   .nav-item__link.active, .nav-item__link {
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .nav__content {
+    gap: 7px;
   }
 }
 @media (max-width: 356px) {
@@ -1333,9 +1333,6 @@ a {
   .developed__designed-text, .developed__designed-kobtseva {
     font-size: 11px;
   }
-  .phone__link, .phone__subtitle {
-    font-size: 12px;
-  }
 }
 @media (max-width: 1024px) {
   .container {
@@ -1344,12 +1341,6 @@ a {
   }
 }
 @media (max-width: 768px) {
-  .container {
-    width: 340px;
-    padding: 0 12px;
-  }
-}
-@media (max-width: 356px) {
   .container {
     width: 100%;
     padding: 0 12px;
