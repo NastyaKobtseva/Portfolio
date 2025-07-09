@@ -136,7 +136,7 @@
     line-height: normal;
 }
 @media (max-width: 1024px) {
-    .developed__designed-text {
+    .developed__designed-text, .developed__designed-kobtseva {
         font-size: 12px;
     }
     .social__subtitle {
@@ -170,7 +170,10 @@
     .social__subtitle {
         font-size: 28px;
     }
-    .developed__designed-text {
+    .developed__designed-text, .developed__designed-kobtseva {
         font-size: 11px;
+    }
+    .phone__link,     .phone__subtitle {
+        font-size: 12px;
     }
 }

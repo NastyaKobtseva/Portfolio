@@ -790,6 +790,17 @@ a {
   .information__skills {
     gap: 30px;
   }
+  .hobbies__subtitle {
+    font-size: 13px;
+  }
+  .hobbies__text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 356px) {
+  .information__content {
+    width: 300px;
+  }
 }
 .project {
   background-color: #3B3B3B;
@@ -1106,6 +1117,12 @@ a {
   .magic__content {
     width: 320px;
   }
+  .magic__content-subtitle {
+    font-size: 13px;
+  }
+  .nav-item__link.active, .nav-item__link {
+    font-size: 15px;
+  }
 }
 @media (max-width: 356px) {
   .nav-tabs .nav-item.show .nav-link::after, .nav-tabs .nav-link.active::after {
@@ -1115,7 +1132,10 @@ a {
     padding: 0.5rem 0;
   }
   .nav__content {
-    gap: 45px;
+    gap: 17px;
+  }
+  .nav-item__link.active, .nav-item__link {
+    font-size: 14px;
   }
   .magic__content {
     width: 100%;
@@ -1276,7 +1296,7 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .developed__designed-text {
+  .developed__designed-text, .developed__designed-kobtseva {
     font-size: 12px;
   }
   .social__subtitle {
@@ -1310,8 +1330,11 @@ a {
   .social__subtitle {
     font-size: 28px;
   }
-  .developed__designed-text {
+  .developed__designed-text, .developed__designed-kobtseva {
     font-size: 11px;
+  }
+  .phone__link, .phone__subtitle {
+    font-size: 12px;
   }
 }
 @media (max-width: 1024px) {
@@ -1328,7 +1351,7 @@ a {
 }
 @media (max-width: 356px) {
   .container {
-    width: 320px;
+    width: 100%;
     padding: 0 12px;
   }
 }

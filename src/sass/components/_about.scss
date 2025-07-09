@@ -347,4 +347,15 @@
     .information__skills {
         gap: 30px;
     }
+    .hobbies__subtitle {
+        font-size: 13px;
+    }
+        .hobbies__text {
+        font-size: 13px;
+    }
+}
+@media (max-width: 356px) {
+    .information__content {
+        width: 300px;
+    }
 }
