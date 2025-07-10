@@ -1117,10 +1117,10 @@ a {
     font-size: 14px;
   }
   .nav__content {
-    gap: 7px;
+    gap: 8px;
   }
 }
-@media (max-width: 356px) {
+@media (max-width: 385px) {
   .magic {
     grid-template-columns: 100%;
     justify-content: center;
@@ -1132,7 +1132,7 @@ a {
     padding: 0.5rem 0;
   }
   .nav__content {
-    gap: 17px;
+    gap: 6px;
   }
   .nav-item__link.active, .nav-item__link {
     font-size: 14px;
