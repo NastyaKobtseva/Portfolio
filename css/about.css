@@ -20,9 +20,10 @@ a {
 }
 
 .container {
-  width: 1074px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 16px;
 }
 
 .header {
@@ -709,13 +710,11 @@ a {
 }
 @media (max-width: 1024px) {
   .container {
-    width: 714px;
     padding: 0 24px;
   }
 }
 @media (max-width: 768px) {
   .container {
-    width: 100%;
     padding: 0 12px;
   }
 }
