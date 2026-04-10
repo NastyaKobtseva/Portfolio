@@ -13,6 +13,68 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- Overlay popup -->
+    <div id="archiveOverlay" style="
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background: rgba(0,0,0,0.5);
+    ">
+        <div style="
+            max-width: 560px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 36px 28px 28px;
+            border-radius: 16px;
+            border: 2px solid #687aff;
+            background: #131219;
+            text-align: center;
+            font-family: 'Manrope', sans-serif;
+        ">
+            <!-- Кнопка закрити -->
+            <button onclick="document.getElementById('archiveOverlay').style.display='none'" style="
+                position: absolute;
+                top: 12px;
+                right: 14px;
+                background: transparent;
+                border: none;
+                color: #c3c3c3;
+                font-size: 22px;
+                cursor: pointer;
+                line-height: 1;
+                transition: color .2s;
+            " onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#c3c3c3'">✕</button>
+
+            <h1 style="font-family: Manrope; color:#fff; font-size:1.4rem; margin:0 0 12px;">
+                ⚠️ <span data-en="Attention:" data-uk="Увага:" style="color:red;">Увага:</span> <span style="font-family: Manrope; color:#fff; font-size:1.4rem; margin:0 0 12px;" data-en="This is an archived website" data-uk="Це архівний сайт">Це архівний сайт</span>
+            </h1>
+            <p data-en="Hello! I'm glad to welcome you to my old portfolio. To view my most up-to-date work and access the latest information, please visit my new website. Thank you for your understanding!" data-uk="Привіт! Рада вітати вас на моєму старому портфоліо. Щоб переглянути мої найактуальніші роботи та отримати доступ до оновленої інформації, будь ласка, перейдіть на мій новий сайт. Дякую за розуміння!" style="font-family: Manrope; color:#c3c3c3; margin:0 0 20px; line-height:1.6;">
+                Привіт! Рада вітати вас на моєму старому портфоліо. Щоб переглянути мої найактуальніші роботи та отримати доступ до оновленої інформації, будь ласка, перейдіть на мій новий сайт. Дякую за розуміння!
+            </p>
+            <a data-en="Visit the new website" data-uk="Відвідати новий сайт" href="https://anastasiiakobtseva.github.io/Cosmic-Portfolio/" target="_blank" style="
+                color:#fff;
+                font-family: Manrope;
+                text-decoration:none;
+                padding:10px 20px;
+                background:#0055ff;
+                border-radius:10px;
+                transition:background .3s;
+                font-family:'Manrope',sans-serif;
+            " onmouseover="this.style.background='#0044cc'" onmouseout="this.style.background='#0055ff'">
+                Відвідати новий сайт
+            </a>
+        </div>
+    </div>
     <header class="header">
         <div class="container header__content">
             <a class="header__content-link" href="#">
